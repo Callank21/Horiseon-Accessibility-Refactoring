@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
+} 
 
 body {
     background-color: #d9dcd6;
@@ -10,7 +10,7 @@ body {
 
 .header {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* no '' around arial, san-serif */ /* Font Family is specified too many times in this document, probably okay to delete some / only specify some kinds of texts for whole document */
     background-color: #2a607c;
     color: #ffffff;
 }
@@ -20,7 +20,7 @@ body {
     font-size: 48px;
 }
 
-.header h1 .seo {
+.header h1 .seo { /* slight distinction in white between this font and the other font, don't know if this is intentional */
     color: #d9dcd6;
 }
 
@@ -28,7 +28,7 @@ body {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*no '' around calibri, san-serif */
     font-size: 20px;
 }
 
@@ -42,7 +42,7 @@ body {
 }
 
 a {
-    color: #ffffff;
+    color: #ffffff; /* potentially unnecessary */
     text-decoration: none;
 }
 
@@ -82,59 +82,68 @@ p {
     float: right;
     width: 20%;
     height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* potentially unnecessary */
+    background-color: #2589bd; /* potentially unnecessary */
 }
 
-.benefit-lead {
+.benefit-lead { /* This class is duplicated, erase other two */
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
+.benefit-brand { /* Erase */
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-cost {
+.benefit-cost { /* Erase */
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-lead h3 {
+.benefit-lead h3 { /* This class is duplicated, erase other two */
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
+.benefit-brand h3 { /* Erase */
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-cost h3 {
+.benefit-cost h3 { /* Erase */
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-lead img {
+.benefit-lead img { /* This class is duplicated, erase other two */
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
+.benefit-brand img { /* Erase */
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-cost img {
+.benefit-cost img { /* Erase */
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.search-engine-optimization {
+.search-engine-optimization { /* This class is duplicated, erase other two */
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* put '' around calibri and sans-serif*/ /*possible duplication of code above in * tag */
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.online-reputation-management { /* Erase */
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -143,7 +152,7 @@ p {
     color: #ffffff;
 }
 
-.online-reputation-management {
+.social-media-marketing { /* Erase */
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -152,38 +161,29 @@ p {
     color: #ffffff;
 }
 
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
+.search-engine-optimization img { /* This class is duplicated, erase other two */
     max-height: 200px;
 }
 
-.online-reputation-management img {
+.online-reputation-management img { /* Erase */
     max-height: 200px;
 }
 
-.social-media-marketing img {
+.social-media-marketing img { /* Erase */
     max-height: 200px;
 }
 
-.search-engine-optimization h2 {
+.search-engine-optimization h2 { /* This class is duplicated, erase other two */ 
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.online-reputation-management h2 {
+.online-reputation-management h2 { /* Erase */
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.social-media-marketing h2 {
+.social-media-marketing h2 { /* Erase */
     margin-bottom: 20px;
     font-size: 36px;
 }
