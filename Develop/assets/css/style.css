@@ -2,47 +2,47 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*pulled out of header h1, content, and benefits classes, */
 } 
 
 body {
     background-color: #d9dcd6;
 }
 
-.header {
+header {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* no '' around arial, san-serif */ /* Font Family is specified too many times in this document, probably okay to delete some / only specify some kinds of texts for whole document */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*Specifies font for  header h1 and  header h1 .seo */ 
     background-color: #2a607c;
     color: #ffffff;
 }
 
-.header h1 {
+header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-.header h1 .seo { /* slight distinction in white between this font and the other font, don't know if this is intentional */
+header h1 .seo { 
     color: #d9dcd6;
 }
 
-.header div {
+header nav { 
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*no '' around calibri, san-serif */
     font-size: 20px;
 }
 
-.header div ul {
+header nav ul { /* why is the unordered list element which encapsulates the list items given its own style reference separate from the list items? Combine with list items */
     list-style-type: none;
 }
 
-.header div ul li {
+header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
 a {
-    color: #ffffff; /* potentially unnecessary */
+    color: #ffffff; 
     text-decoration: none;
 }
 
@@ -59,7 +59,7 @@ p {
     background-position: center;
 }
 
-.float-left {
+.float-left { /* Can combine with float-right, reorder html and set overflow: auto */
     float: left;
     margin-right: 25px;
 }
@@ -75,6 +75,23 @@ p {
     margin-left: 20px;
 }
 
+.content-points { 
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.content-points img {
+    max-height: 200px;
+}
+
+.content-points h2 {  
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -82,119 +99,32 @@ p {
     float: right;
     width: 20%;
     height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* potentially unnecessary */
-    background-color: #2589bd; /* potentially unnecessary */
+    background-color: #2589bd; 
 }
 
-.benefit-lead { /* This class is duplicated, erase other two */
+.benefit-points { 
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand { /* Erase */
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost { /* Erase */
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 { /* This class is duplicated, erase other two */
+.benefit-points h3 { 
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 { /* Erase */
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 { /* Erase */
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img { /* This class is duplicated, erase other two */
+.benefit-points img { 
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img { /* Erase */
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img { /* Erase */
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization { /* This class is duplicated, erase other two */
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* put '' around calibri and sans-serif*/ /*possible duplication of code above in * tag */
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management { /* Erase */
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing { /* Erase */
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img { /* This class is duplicated, erase other two */
-    max-height: 200px;
-}
-
-.online-reputation-management img { /* Erase */
-    max-height: 200px;
-}
-
-.social-media-marketing img { /* Erase */
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 { /* This class is duplicated, erase other two */ 
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 { /* Erase */
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 { /* Erase */
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.footer {
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
+footer h2 {
     font-size: 20px;
 }
