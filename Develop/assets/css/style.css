@@ -2,14 +2,14 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*pulled out of header h1, content, and benefits classes, */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*attributes to apply to the entire document */
 } 
 
-body {
+body { /*white background of the whole page */
     background-color: #d9dcd6;
 }
 
-header {
+header { /*applies to the top of the page */
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*Specifies font for  header h1 and  header h1 .seo */ 
     background-color: #2a607c;
@@ -22,7 +22,7 @@ header h1 {
 }
 
 header h1 .seo { 
-    color: #d9dcd6;
+    color: #d9dcd6; /*highlights seo as a slightly offwhite color */
 }
 
 header nav { 
@@ -32,11 +32,8 @@ header nav {
     font-size: 20px;
 }
 
-header nav ul { /* why is the unordered list element which encapsulates the list items given its own style reference separate from the list items? Combine with list items */
-    list-style-type: none;
-}
-
 header nav ul li {
+    list-style-type: none;
     display: inline-block;
     margin-left: 25px;
 }
@@ -50,31 +47,32 @@ p {
     font-size: 16px;
 }
 
-.hero {
+.hero { /*main image of the team working */
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
 }
 
-.float-left { /* Can combine with float-right, reorder html and set overflow: auto */
+.float-left { /* makes the "Search Engine Optimization" and "Social Media Marketing" pictures hug the left of their blue bloxes */
     float: left;
-    margin-right: 25px;
+    margin-right: 25px;  
 }
 
-.float-right {
+.float-right { /*makes the "Online Reputation Management" pictures hug the right of their blue box */
     float: right;
     margin-left: 25px;
 }
 
-.content {
+.content { /*applies to the positioning of the boxes of text on the left*/
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-.content-points { 
+.content-points { /*applies to the positioning of the text in the boxes */
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -91,7 +89,7 @@ p {
     font-size: 36px;
 }
 
-.benefits {
+.benefits { /*applies to the positioning of the boxes of text on the right */
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -101,7 +99,7 @@ p {
     background-color: #2589bd; 
 }
 
-.benefit-points { 
+.benefit-points { /*applies to the positioning of the text in the boxes */
     margin-bottom: 32px;
     color: #ffffff;
 }
@@ -117,7 +115,7 @@ p {
     max-width: 150px;
 }
 
-footer {
+footer { /*applies to the bottom of the page */
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
